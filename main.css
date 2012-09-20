@@ -1,0 +1,125 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#outer {
+	width: 255px;
+	height: 255px;
+	overflow: hidden;
+}
+#wrapper div {	
+	cursor: pointer;
+	-moz-box-shadow: 1px 1px 5px #CCC;
+	-webkit-box-shadow: 1px 1px 5px #CCC;
+	box-shadow: 1px 1px 5px #CCC;
+}
+#wrapper {
+	width: 300px;
+	height: 300px;
+	position: relative;
+	left: 0px;
+	top: 0px;
+	margin: 30px;
+	transition: all 350ms;
+    -webkit-transition: all 350ms;
+	-webkit-transform:rotate(0deg);
+	-moz-transition: all 350ms;
+	-moz-transform:rotate(0deg);
+}
+#mainDiv {
+	width: 50%;
+	height: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	position: relative;
+	background-color: #1BA1E2;
+}
+.subDiv {
+	width: 20%;
+	height: 20%;
+	left: 15%;
+	top: 15%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	position: absolute;
+	transition: all 350ms;
+    -webkit-transition: all 350ms;
+	-moz-transition: all 350ms;
+}
+#colors.open {
+	left: 6%;
+	top: 48%;
+	background-color: #A200FF;
+}
+#path.open {
+	left: 34%;
+	top: 43%;
+	background-color: #8CBF26;
+}
+#frame.open {
+	left: 49%;
+	top: 17%;
+	background-color: #F09609;
+}
+#insert.open {
+	left: 38%;
+	top: -10%;
+	background-color: #FF0097;
+}
+.subDiv.open {
+	transition: all 350ms;
+    -webkit-transition: all 350ms;
+	-moz-webkit-transition: all 350ms;
+    -webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.400, 1); /* older webkit */
+    -webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.400, 1.650); 
+    -moz-transition-timing-function: cubic-bezier(0.250, 0.250, 0.400, 1.650); 
+    -ms-transition-timing-function: cubic-bezier(0.250, 0.250, 0.400, 1.650); 
+    -o-transition-timing-function: cubic-bezier(0.250, 0.250, 0.400, 1.650); 
+    transition-timing-function: cubic-bezier(0.250, 0.250, 0.400, 1.650); /* custom */
+}
+#wrapper.insert-rotate {
+	left: -500px;
+	top: -200px;
+	width: 600px;
+	height: 600px;
+	transition: all 350ms;
+    -webkit-transition: all 350ms;
+	-webkit-transform:rotate(95deg);
+	-moz-transition: all 350ms;
+	-moz-transform:rotate(95deg);
+}
+#wrapper.frame-rotate {
+	left: -325px;
+	top: -125px;
+	width: 600px;
+	height: 600px;
+	transition: all 350ms;
+    -webkit-transition: all 350ms;
+	-webkit-transform:rotate(40deg);
+	-moz-transition: all 350ms;
+	-moz-transform:rotate(40deg);
+}
+#wrapper.path-rotate {
+	left: -170px;
+	top: -215px;
+	width: 600px;
+	height: 600px;
+	transition: all 350ms;
+    -webkit-transition: all 350ms;
+	-webkit-transform:rotate(-10deg);
+	-moz-transition: all 350ms;
+	-moz-transform:rotate(-10deg);
+}
+#wrapper.colors-rotate {
+	left: -135px;
+	top: -400px;
+	width: 600px;
+	height: 600px;
+	transition: all 350ms;
+    -webkit-transition: all 350ms;
+	-webkit-transform:rotate(-60deg);
+	-moz-transition: all 350ms;
+	-moz-transform:rotate(-60deg);
+}
